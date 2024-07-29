@@ -22,3 +22,10 @@ list.addEventListener("click", (e) => {
     clickedItem.style.textDecoration = "none";
   }
 });
+
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    button.click();
+  }
+});
