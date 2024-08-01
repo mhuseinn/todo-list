@@ -7,6 +7,7 @@ button.addEventListener("click", () => {
   if (input.value !== "") {
     const list = document.createElement("li");
     list.textContent = input.value;
+    list.style.backgroundColor = "transparent";
 
     const checked = document.createElement("input");
     checked.type = "checkbox";
@@ -34,7 +35,7 @@ button.addEventListener("click", () => {
 list.addEventListener("click", (e) => {
   const clickedItem = e.target;
   if (clickedItem.style.backgroundColor === "transparent") {
-    clickedItem.style.backgroundColor = "green";
+    clickedItem.style.backgroundColor = "#CADABF";
     clickedItem.style.fontWeight = "bold";
   } else {
     clickedItem.style.backgroundColor = "transparent";
@@ -47,5 +48,7 @@ input.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
     button.click();
+  } else {
+    return false;
   }
 });
