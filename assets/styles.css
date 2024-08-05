@@ -55,6 +55,7 @@ li {
   border-radius: 0.5rem;
 }
 
+#checkbox:hover,
 li:hover {
   cursor: pointer;
 }
@@ -76,8 +77,17 @@ li:hover {
   .container {
     max-width: 100vh;
   }
+
   .input-todo,
   button {
     width: 150%;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  #checkbox {
+    margin-left: 1rem;
   }
 }
